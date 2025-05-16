@@ -1,0 +1,74 @@
+   
+body{
+        /*background-image:url('imgs/car10.webp');*/
+        background-color:black;
+     }
+form{
+    height: 50px;
+    width: 200px;
+    background-color: yellowgreen;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 45px;
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+}
+.button{
+
+    background-color:white;
+    border-radius:5px;
+    font-family:algerian;
+    font-weight:bold;
+    font-size:15px;
+    text-align:center;
+    color:red;
+    width:70px;
+    height:30px;
+}
+
+.button:hover{
+
+background-color:red;
+
+font-family:algerian;
+font-weight:bold;
+text-align:center;
+color:white;
+width:80px;
+height:40px;
+}
+h2 { 
+			
+            font-size: 25px; 
+			font-family: Agency fb; 
+			color:red; 
+			text-align: center; 
+            margin-top:0px;
+			animation: animate 3s linear infinite; 
+		} 
+
+		@keyframes animate { 
+			0% { 
+				opacity: 0; 
+			} 
+
+			50% { 
+				opacity: 1.0; 
+			} 
+
+			100% { 
+				opacity: 0; 
+			} 
+        }
+    
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+

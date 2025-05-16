@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    background-image: url(Imgs/bg1.avif);
+    background-size: 600px;
+}
+
+/* Header Styling */
+.header{
+    background:linear-gradient(to left,#ff9d00d6,rgba(36, 0, 79, 0.932));
+    /* background-color: rgba(255, 255, 255, 0.619); */
+    color:rgb(248, 248, 248);
+    padding: 1rem;
+    font-family: ravie;
+    text-align: justify; 
+    
+}
+header font{
+    font-size: 3rem;
+    font-family: ravie;
+    
+}
+header .logo {
+    width: 120px; 
+    height: auto;
+    /* margin-right: 1rem;  */
+}
+
+/* Navigation Menu Styling */
+nav {
+    background-color:rgb(31, 31, 31);
+    color: white;
+    box-shadow: 2px 2px 0px 2px rgba(0, 0, 0, 0.273);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+nav .hamburger {
+    display: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+nav ul {
+    display:flex;
+    justify-content:flex-end;
+    list-style: none;
+    padding: 0.42rem ;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Hamburger Checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 678px) {
+    nav .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 11rem; /* Adjusts the dropdown position */
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+        border-bottom: 1px solid #555;
+    }
+    
+    nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    header font{
+        font-size:2rem;
+        font-family: ravie;
+        
+    }
+    header .logo {
+        width: 100px; 
+        height: auto;
+        /* margin-right: 1rem;  */
+    }
+}
+
+/* About section */
+main {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    font-family: agency fb;
+    max-width: 1200px;
+}
+
+#About{
+    background-color: #b5b5b5bd;
+    padding: 25px;
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    flex:1;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    font-family: agency fb;
+    font-size: 110%;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.702);
+    /* box-shadow: 0 5px 5px rgba(101, 65, 65, 0.845) */
+}
+
+/* Article Styling */
+article {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.702);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    /* margin-top: 2rem; */
+    font-size: 0.9rem;
+}
+
+/* Container to handle overflow and positioning */
+.heading-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+}
+
+/* Heading to animate */
+/* .sliding-heading {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: slide-in 5s ease-out forwards; /* Animation applied */
+/* }
+
+/* Keyframes for the sliding animation */
+/* @keyframes slide-in {
+  from {
+    transform: translateX(100%); /* Start off the screen to the right */
+  /* }
+  to {
+    transform: translateX(0); /* End at its natural position */
+  /* }
+} */ 
+
+
+.header {
+    background: linear-gradient(to left, #ff9d00d6, rgba(36, 0, 79, 0.932));
+    color: rgb(248, 248, 248);
+    padding: 0.9rem;
+    font-family: ravie;
+    text-align: justify; 
+    position: relative; /* Ensure the header is positioned relative for absolute positioning of child elements */
+}
+
+.sliding-heading {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden; /* Prevents overflow during animation */
+    animation: slide-down 1s ease-out forwards; /* Animation applied */
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%); /* Start off the screen above */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at its natural position */
+        opacity: 1; /* End fully visible */
+    }
+}
+/* Contact start */
+
+.contact{
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+    /* background-color:rgba(255, 235, 59, 0.525); */
+    background-color: #b5b5b5c5;
+    /* background:linear-gradient(to left,rgba(255, 157, 0, 0.24),rgba(36, 0, 79, 0.34)); */
+    padding: 2rem;
+}
+
+.chead{
+	/* background-color:purple; */
+    background:linear-gradient(to left,rgba(36, 0, 79, 0.78),rgba(255, 157, 0, 0.81));
+	padding: 10px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    font-family: agency fb;
+    font-size:2rem;
+    color: whitesmoke;
+	text-align: center;
+} 
+
+#contact h1 {
+	margin-bottom: 0;
+}
+
+#contact main {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.contact-info {
+	background-color: #f4f4f4;
+	padding: 20px;
+	width: 30%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* border-radius: 5px;
+    box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.702); */
+}
+
+.contact-info:hover {
+	/* background-color: #f4f4f4;
+	padding: 20px;
+	width: 30%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: agency fb;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* border-radius: 5px; */
+    box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.702);
+}
+
+
+#Contact h2 {
+	margin-bottom: 10px;
+}
+
+.contact-info2{
+	/* background-color: wheat; */
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    
+::-webkit-scrollbar {
+    width: 0px;
+}

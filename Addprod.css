@@ -1,0 +1,46 @@
+body{
+    /* background : linear-gradient(to bottom,beige,rgb(212, 212, 205)) */
+    /* background-color:rgb(253, 243, 253); */
+    background-image: url("Imgs/b10.jpg");
+    /* background-image: url("Imgs/bg1.avif"); */
+    /* font-family: agency fb; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-right: 100px; */
+}
+
+main{
+    /* background-color: #b5b5b569; */
+    background:linear-gradient(to left,rgba(255, 157, 0, 0.24),rgba(36, 0, 79, 0.34));
+    padding: 5px;
+}
+
+html{
+    /* background-color: #b5b5b5bd; */
+    background:linear-gradient(to left,rgba(255, 157, 0, 0.24),rgba(36, 0, 79, 0.34));
+}
+form{
+    background-color:rgba(212, 212, 212, 0.801);
+    /* background-color: #f4f4f4; */
+    justify-self: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 50px;
+    box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.702);
+    border-radius: 15px;
+    height: 300px;
+}
+
+.b1{
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+    
+::-webkit-scrollbar {
+    width: 0px;
+}

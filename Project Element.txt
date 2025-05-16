@@ -1,0 +1,20 @@
+admin user(order accept karke delivery boy ko assign karna)
+payment
+
+user block
+
+
+Order:
+order booked (client)
+order details cancle order
+
+
+Prod:
+add
+delete
+update
+
+
+delivery boy :
+delivery boy (order utha k pahuchana)
+delivery boy block
